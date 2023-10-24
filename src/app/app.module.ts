@@ -8,6 +8,9 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { ProductcardComponent } from './Components/productcard/productcard.component';
 import { SliderComponent } from './Components/slider/slider.component';
+import { ImageshowComponent } from './Components/imageshow/imageshow.component';
+import { TodolistComponent } from './Components/todolist/todolist.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { SliderComponent } from './Components/slider/slider.component';
     FooterComponent,
     ProductsComponent,
     ProductcardComponent,
-    SliderComponent
+    SliderComponent,
+    ImageshowComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

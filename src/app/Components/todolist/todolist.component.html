@@ -1,0 +1,10 @@
+<div class="text-center ">
+    <form action="form-control mb-2">
+        <input type="text" #myText class="form-control" name="mytext">
+        <input type="submit" value="Add" (click)="AddName(myText)" class="btn btn-success w-25">
+    </form>
+    <div *ngFor="let item of names; let i = index">
+        <label>{{item}}</label>
+        <button class=" ml-2 btn btn-danger " type="button" (click)="DeleteName(i)">Delete</button>
+    </div>
+</div>
