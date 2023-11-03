@@ -11,6 +11,7 @@ import { SliderComponent } from './Components/slider/slider.component';
 import { ImageshowComponent } from './Components/imageshow/imageshow.component';
 import { TodolistComponent } from './Components/todolist/todolist.component';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { FormsModule } from '@angular/forms';
     ProductcardComponent,
     SliderComponent,
     ImageshowComponent,
-    TodolistComponent
+    TodolistComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

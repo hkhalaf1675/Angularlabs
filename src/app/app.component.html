@@ -1,7 +1,8 @@
 <app-navbar></app-navbar>
-<app-products></app-products>
-<br /><hr /><br />
-<app-imageshow></app-imageshow>
-<br /><hr /><br />
-<app-todolist></app-todolist>
+<div>
+    <app-products (productAdded)="addProduct($event)"></app-products>
+  </div>
+  <div>
+    <app-product-details [products]="products" (productDeleted)="deleteProduct($event)"></app-product-details>
+  </div>
 <app-footer></app-footer>
